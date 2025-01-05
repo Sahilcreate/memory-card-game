@@ -16,7 +16,7 @@ function Card({handleClick, id}) {
                 setCardData({
                     id: id,
                     name: jsonResponse["name"],
-                    imageUrl: jsonResponse["sprites"]["other"]["official-artwork"]["front_default"]
+                    imageUrl: jsonResponse["sprites"]["front_default"]
                 });
             } catch (error) {
                 console.log(`Error fetching pokemon data with id=${id}: `, error)
@@ -36,10 +36,10 @@ function Card({handleClick, id}) {
       <>
         <button onClick={() => handleClick(cardData.id)}>
             <img src={cardData.imageUrl} alt={`${cardData.name}-${cardData.id}`}/>
+            <div className="display-card-name">
+                {cardData.name}
+            </div>
         </button>
-        <div className="display-card-name">
-            {cardData.name}
-        </div>
       </>
     )
 }

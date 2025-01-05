@@ -26,7 +26,11 @@ function Game({totalPossibility, cardsShown}) {
     }
 
     const handleRestartBtnClick = () => {
-        return;
+        if (cardIndexes.length > highScore) {
+            setHighScore(cardIndexes.length);
+        }
+        setCardIndexes([]);
+        setIsGameOver(false);
     }
     
     return (

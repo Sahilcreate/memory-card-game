@@ -1,7 +1,7 @@
 import Game from "./Game";
 
 function App() {
-  const totalPossibility = 1025;
+  const totalPossibility = 150;
   const cardsShown = 10;
 
   return (
