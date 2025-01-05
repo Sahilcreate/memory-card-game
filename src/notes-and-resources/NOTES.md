@@ -85,6 +85,11 @@ Another thing is the number of cards to be shown. I am just going to leave it in
 
 - commited the changes i made yesterday.
 
-I encountered a problem. It's not a problem with logic but a simple miscalculation on my part. I made the game continuous but set `totalPossibility = 1025`, which introduced a high probability of not encountering same twice.
+I encountered a problem. It's not a problem with logic but a simple miscalculation on my part. I made the game continuous but set `totalPossibility = 1025`, which introduced a high probability of not encountering same card twice.  
 But limiting the possibilites will also make the probability of same `id`
 appearing in same run high, so i also have to take that into account.
+
+> done
+
+- CSS is added
+- I feel like responsive design is so much easier when done with TailwindCSS
