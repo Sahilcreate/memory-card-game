@@ -1,3 +1,5 @@
+//generate array of random ID's of length='cardsShown'
+//from posibilities='totalPosibility'
 export default function generateRandomIdArray(totalPosibility, cardsShown) {
   if (cardsShown > totalPosibility) {
     throw new Error(
